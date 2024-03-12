@@ -16,6 +16,7 @@ git-modifications.txt
 json-data.json
 ios.zip
 ios/Podfile.lock
+pubspec.lock
 
 # IntelliJ related
 *.iml
