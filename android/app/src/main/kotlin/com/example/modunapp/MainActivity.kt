@@ -1,4 +1,4 @@
-package com.example.modunapp
+package com.modunsa
 
 import io.flutter.embedding.android.FlutterActivity
 

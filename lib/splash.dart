@@ -56,11 +56,11 @@ class _SplashState extends State<Splash>
 
     setState(() { loading_desc = "جاري الدخول..."; });
 
-    // Navigator.push(
-    //   context, 
-    //   MaterialPageRoute(
-    //     builder: (context) => Web() )
-    //   );          
+    Navigator.push(
+      context, 
+      MaterialPageRoute(
+        builder: (context) => Web() )
+      );          
 
   }
 
@@ -73,7 +73,7 @@ class _SplashState extends State<Splash>
           body: Container(
             height: MediaQuery.of(context).size.height,
             alignment: Alignment.bottomCenter,
-            color: PRIMARY,
+            color: WHITE,
             child: Directionality(
               textDirection: TextDirection.rtl,
               child: Center(
@@ -83,20 +83,21 @@ class _SplashState extends State<Splash>
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(height: 20.h),
-                      Image.asset( "assets/logo.png", width: 150,),
+                      SizedBox(height: 10.h),
+                      // Image.asset( "assets/logo.png", width: 150,),
+                      Image.asset( "assets/splash.png", width: 300,),
 
-                      SizedBox(height: 5.h),
-                      Text(
-                        "مرحباً بكم في منصة مدن العقارية",
-                        style: GoogleFonts.almarai(color: WHITE, fontSize: 16.sp, fontWeight: FontWeight.bold),
-                      ),
+                      // SizedBox(height: 5.h),
+                      // Text(
+                      //   "مرحباً بكم في منصة مدن العقارية",
+                      //   style: GoogleFonts.almarai(color: PRIMARY, fontSize: 16.sp, fontWeight: FontWeight.bold),
+                      // ),
                       
-                      SizedBox(height: 15.h),
+                      SizedBox(height: 10.h),
 
                       Text(
                         "برمجة م/سامي الفتني",
-                        // style: GoogleFonts.almarai(color: WHITE, fontSize: 12.sp, fontWeight: FontWeight.bold),
+                        style: GoogleFonts.almarai(color: PRIMARY, fontSize: 16.sp, fontWeight: FontWeight.bold),
                       ),
                       
                       SizedBox(height: 5.h),
@@ -104,13 +105,13 @@ class _SplashState extends State<Splash>
                         this.info == null? ""
                         :
                         "version: ${this.info?.version}+${this.info?.buildNumber} ",
-                        // style: GoogleFonts.courierPrime(color: WHITE, fontSize: 9.sp,),
+                        style: GoogleFonts.courierPrime(color: PRIMARY, fontSize: 12.sp,),
                       ),
               
                       const Spacer(),
                       Text(
                         this.loading_desc,
-                        // style: GoogleFonts.courierPrime(color: WHITE, fontSize: 9.sp, ),
+                        style: GoogleFonts.courierPrime(color: PRIMARY, fontSize: 9.sp, ),
                       ),
               
                       SizedBox(height: 2.h),
