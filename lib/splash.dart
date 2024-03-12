@@ -56,11 +56,11 @@ class _SplashState extends State<Splash>
 
     setState(() { loading_desc = "جاري الدخول..."; });
 
-    Navigator.push(
-      context, 
-      MaterialPageRoute(
-        builder: (context) => Web() )
-      );          
+    // Navigator.push(
+    //   context, 
+    //   MaterialPageRoute(
+    //     builder: (context) => Web() )
+    //   );          
 
   }
 

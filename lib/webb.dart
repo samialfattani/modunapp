@@ -91,8 +91,6 @@ class _WebState extends State<Web>
         // the back button 
         onPopInvoked: (didPop) 
         {
-          //do your logic here:
-          // showToast(msg: "msg", state: ToastStates.SUCCESS);
           _webViewController.goBack();
         },
         child: get_scaffold()
