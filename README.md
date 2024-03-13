@@ -68,6 +68,9 @@ $ flutter run --release
 1. you can read this [article](https://docs.flutter.dev/deployment/android)
 2. Make sure you are using same *.jks file (Upload Sining Key) that is already uploaded toe Google Play.
 3. *.jks file need a password to be read properly which can be found in `build/Android/key.properties` file.
+```bash
+keytool -genkey -v -keystore modunsa.jks -alias modunsa -keyalg RSA -keysize 2048 -validity 10000 
+```
 
 4. Create Bundle:
 ```bash

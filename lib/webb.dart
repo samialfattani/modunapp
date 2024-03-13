@@ -94,9 +94,7 @@ class _WebState extends State<Web>
           _webViewController.goBack();
         },
         child: get_scaffold()
-      );
-
-    
+      );    
   }
 
 
